@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		560619601E783F12008DCDB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5606195F1E783F12008DCDB9 /* AppDelegate.swift */; };
+		560619621E783F12008DCDB9 /* LibraryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560619611E783F12008DCDB9 /* LibraryController.swift */; };
+		560619671E783F12008DCDB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 560619661E783F12008DCDB9 /* Assets.xcassets */; };
+		560619721E783F23008DCDB9 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560619711E783F23008DCDB9 /* APIClient.swift */; };
+		5606197F1E784006008DCDB9 /* LibraryKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5606197D1E784006008DCDB9 /* LibraryKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		560619821E784006008DCDB9 /* LibraryKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5606197B1E784006008DCDB9 /* LibraryKit.framework */; };
+		560619831E784006008DCDB9 /* LibraryKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5606197B1E784006008DCDB9 /* LibraryKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		560619881E784010008DCDB9 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560619711E783F23008DCDB9 /* APIClient.swift */; };
+		5606198A1E78482B008DCDB9 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560619891E78482B008DCDB9 /* Book.swift */; };
+		5606198C1E784D6E008DCDB9 /* BookStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5606198B1E784D6E008DCDB9 /* BookStore.swift */; };
+		5606198F1E7853C4008DCDB9 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5606198E1E7853C4008DCDB9 /* LibraryView.swift */; };
+		560619931E785405008DCDB9 /* LibraryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560619921E785405008DCDB9 /* LibraryViewCell.swift */; };
+		560619961E789678008DCDB9 /* BookDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560619951E789678008DCDB9 /* BookDetailController.swift */; };
+		560619991E789725008DCDB9 /* CheckOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560619981E789725008DCDB9 /* CheckOutView.swift */; };
+		5606199C1E78D728008DCDB9 /* AddBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5606199B1E78D728008DCDB9 /* AddBookController.swift */; };
+		5606199F1E78D80E008DCDB9 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5606199E1E78D80E008DCDB9 /* AddBookView.swift */; };
+		560619A11E7987CC008DCDB9 /* VisibleCellsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560619A01E7987CC008DCDB9 /* VisibleCellsProtocol.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		560619801E784006008DCDB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 560619541E783F12008DCDB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5606197A1E784006008DCDB9;
+			remoteInfo = LibraryKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		560619871E784006008DCDB9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				560619831E784006008DCDB9 /* LibraryKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5606195C1E783F12008DCDB9 /* FlatironLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlatironLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5606195F1E783F12008DCDB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = FlatironLibrary/AppDelegate.swift; sourceTree = "<group>"; };
+		560619611E783F12008DCDB9 /* LibraryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryController.swift; sourceTree = "<group>"; };
+		560619661E783F12008DCDB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = FlatironLibrary/Assets.xcassets; sourceTree = "<group>"; };
+		5606196B1E783F12008DCDB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = FlatironLibrary/Info.plist; sourceTree = "<group>"; };
+		560619711E783F23008DCDB9 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIClient.swift; path = FlatironLibrary/APIClient.swift; sourceTree = "<group>"; };
+		560619751E783FF6008DCDB9 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Playground.playground; path = FlatironLibrary/Playground.playground; sourceTree = "<group>"; };
+		5606197B1E784006008DCDB9 /* LibraryKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LibraryKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5606197D1E784006008DCDB9 /* LibraryKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibraryKit.h; sourceTree = "<group>"; };
+		5606197E1E784006008DCDB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		560619891E78482B008DCDB9 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		5606198B1E784D6E008DCDB9 /* BookStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookStore.swift; sourceTree = "<group>"; };
+		5606198E1E7853C4008DCDB9 /* LibraryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		560619921E785405008DCDB9 /* LibraryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryViewCell.swift; sourceTree = "<group>"; };
+		560619951E789678008DCDB9 /* BookDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDetailController.swift; sourceTree = "<group>"; };
+		560619981E789725008DCDB9 /* CheckOutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckOutView.swift; sourceTree = "<group>"; };
+		5606199B1E78D728008DCDB9 /* AddBookController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBookController.swift; sourceTree = "<group>"; };
+		5606199E1E78D80E008DCDB9 /* AddBookView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
+		560619A01E7987CC008DCDB9 /* VisibleCellsProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisibleCellsProtocol.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		560619591E783F12008DCDB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				560619821E784006008DCDB9 /* LibraryKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		560619771E784006008DCDB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		560619531E783F12008DCDB9 = {
+			isa = PBXGroup;
+			children = (
+				5606198D1E784E91008DCDB9 /* Necessary Files */,
+				5606195E1E783F12008DCDB9 /* FlatironLibrary */,
+				5606199A1E78D710008DCDB9 /* AddBook */,
+				560619941E7893B9008DCDB9 /* Checkout Book */,
+				5606197C1E784006008DCDB9 /* LibraryKit */,
+				5606195D1E783F12008DCDB9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5606195D1E783F12008DCDB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5606195C1E783F12008DCDB9 /* FlatironLibrary.app */,
+				5606197B1E784006008DCDB9 /* LibraryKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5606195E1E783F12008DCDB9 /* FlatironLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				560619611E783F12008DCDB9 /* LibraryController.swift */,
+				560619901E7853D0008DCDB9 /* Models */,
+				560619911E7853D5008DCDB9 /* Views */,
+				560619A01E7987CC008DCDB9 /* VisibleCellsProtocol.swift */,
+			);
+			path = FlatironLibrary;
+			sourceTree = "<group>";
+		};
+		5606197C1E784006008DCDB9 /* LibraryKit */ = {
+			isa = PBXGroup;
+			children = (
+				5606197D1E784006008DCDB9 /* LibraryKit.h */,
+				5606197E1E784006008DCDB9 /* Info.plist */,
+			);
+			path = LibraryKit;
+			sourceTree = "<group>";
+		};
+		5606198D1E784E91008DCDB9 /* Necessary Files */ = {
+			isa = PBXGroup;
+			children = (
+				560619751E783FF6008DCDB9 /* Playground.playground */,
+				5606195F1E783F12008DCDB9 /* AppDelegate.swift */,
+				560619711E783F23008DCDB9 /* APIClient.swift */,
+				560619661E783F12008DCDB9 /* Assets.xcassets */,
+				5606196B1E783F12008DCDB9 /* Info.plist */,
+			);
+			name = "Necessary Files";
+			sourceTree = "<group>";
+		};
+		560619901E7853D0008DCDB9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5606198B1E784D6E008DCDB9 /* BookStore.swift */,
+				560619891E78482B008DCDB9 /* Book.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		560619911E7853D5008DCDB9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5606198E1E7853C4008DCDB9 /* LibraryView.swift */,
+				560619921E785405008DCDB9 /* LibraryViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		560619941E7893B9008DCDB9 /* Checkout Book */ = {
+			isa = PBXGroup;
+			children = (
+				560619951E789678008DCDB9 /* BookDetailController.swift */,
+				560619971E789717008DCDB9 /* Views */,
+			);
+			name = "Checkout Book";
+			sourceTree = "<group>";
+		};
+		560619971E789717008DCDB9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				560619981E789725008DCDB9 /* CheckOutView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		5606199A1E78D710008DCDB9 /* AddBook */ = {
+			isa = PBXGroup;
+			children = (
+				5606199B1E78D728008DCDB9 /* AddBookController.swift */,
+				5606199D1E78D7F9008DCDB9 /* Views */,
+			);
+			name = AddBook;
+			sourceTree = "<group>";
+		};
+		5606199D1E78D7F9008DCDB9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5606199E1E78D80E008DCDB9 /* AddBookView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		560619781E784006008DCDB9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5606197F1E784006008DCDB9 /* LibraryKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5606195B1E783F12008DCDB9 /* FlatironLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5606196E1E783F12008DCDB9 /* Build configuration list for PBXNativeTarget "FlatironLibrary" */;
+			buildPhases = (
+				560619581E783F12008DCDB9 /* Sources */,
+				560619591E783F12008DCDB9 /* Frameworks */,
+				5606195A1E783F12008DCDB9 /* Resources */,
+				560619871E784006008DCDB9 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				560619811E784006008DCDB9 /* PBXTargetDependency */,
+			);
+			name = FlatironLibrary;
+			productName = FlatironLibrary;
+			productReference = 5606195C1E783F12008DCDB9 /* FlatironLibrary.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5606197A1E784006008DCDB9 /* LibraryKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 560619841E784006008DCDB9 /* Build configuration list for PBXNativeTarget "LibraryKit" */;
+			buildPhases = (
+				560619761E784006008DCDB9 /* Sources */,
+				560619771E784006008DCDB9 /* Frameworks */,
+				560619781E784006008DCDB9 /* Headers */,
+				560619791E784006008DCDB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LibraryKit;
+			productName = LibraryKit;
+			productReference = 5606197B1E784006008DCDB9 /* LibraryKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		560619541E783F12008DCDB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "William Brancato";
+				TargetAttributes = {
+					5606195B1E783F12008DCDB9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = X6M58BL6UT;
+						ProvisioningStyle = Automatic;
+					};
+					5606197A1E784006008DCDB9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = X6M58BL6UT;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 560619571E783F12008DCDB9 /* Build configuration list for PBXProject "FlatironLibrary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 560619531E783F12008DCDB9;
+			productRefGroup = 5606195D1E783F12008DCDB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5606195B1E783F12008DCDB9 /* FlatironLibrary */,
+				5606197A1E784006008DCDB9 /* LibraryKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5606195A1E783F12008DCDB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				560619671E783F12008DCDB9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		560619791E784006008DCDB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		560619581E783F12008DCDB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5606198A1E78482B008DCDB9 /* Book.swift in Sources */,
+				560619991E789725008DCDB9 /* CheckOutView.swift in Sources */,
+				560619621E783F12008DCDB9 /* LibraryController.swift in Sources */,
+				560619601E783F12008DCDB9 /* AppDelegate.swift in Sources */,
+				560619A11E7987CC008DCDB9 /* VisibleCellsProtocol.swift in Sources */,
+				5606199C1E78D728008DCDB9 /* AddBookController.swift in Sources */,
+				5606198C1E784D6E008DCDB9 /* BookStore.swift in Sources */,
+				560619931E785405008DCDB9 /* LibraryViewCell.swift in Sources */,
+				5606199F1E78D80E008DCDB9 /* AddBookView.swift in Sources */,
+				560619961E789678008DCDB9 /* BookDetailController.swift in Sources */,
+				5606198F1E7853C4008DCDB9 /* LibraryView.swift in Sources */,
+				560619721E783F23008DCDB9 /* APIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		560619761E784006008DCDB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				560619881E784010008DCDB9 /* APIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		560619811E784006008DCDB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5606197A1E784006008DCDB9 /* LibraryKit */;
+			targetProxy = 560619801E784006008DCDB9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5606196C1E783F12008DCDB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5606196D1E783F12008DCDB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5606196F1E783F12008DCDB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X6M58BL6UT;
+				INFOPLIST_FILE = FlatironLibrary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.FlatironLibrary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		560619701E783F12008DCDB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X6M58BL6UT;
+				INFOPLIST_FILE = FlatironLibrary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.FlatironLibrary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		560619851E784006008DCDB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = X6M58BL6UT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LibraryKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.LibraryKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		560619861E784006008DCDB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = X6M58BL6UT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LibraryKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.LibraryKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		560619571E783F12008DCDB9 /* Build configuration list for PBXProject "FlatironLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5606196C1E783F12008DCDB9 /* Debug */,
+				5606196D1E783F12008DCDB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5606196E1E783F12008DCDB9 /* Build configuration list for PBXNativeTarget "FlatironLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5606196F1E783F12008DCDB9 /* Debug */,
+				560619701E783F12008DCDB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		560619841E784006008DCDB9 /* Build configuration list for PBXNativeTarget "LibraryKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				560619851E784006008DCDB9 /* Debug */,
+				560619861E784006008DCDB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 560619541E783F12008DCDB9 /* Project object */;
+}
