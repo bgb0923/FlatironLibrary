@@ -118,7 +118,7 @@
 				560619611E783F12008DCDB9 /* LibraryController.swift */,
 				560619901E7853D0008DCDB9 /* Models */,
 				560619911E7853D5008DCDB9 /* Views */,
-				560619A01E7987CC008DCDB9 /* VisibleCellsProtocol.swift */,
+				560619A21E79AA43008DCDB9 /* Protocols */,
 			);
 			path = FlatironLibrary;
 			sourceTree = "<group>";
@@ -194,6 +194,14 @@
 				5606199E1E78D80E008DCDB9 /* AddBookView.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		560619A21E79AA43008DCDB9 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				560619A01E7987CC008DCDB9 /* VisibleCellsProtocol.swift */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
